@@ -1,12 +1,17 @@
 #include <stdio.h>
 int main()
 {
-    int sum = 0;
-    int i;
+    int i,j,result;
 
-    for ( i = 1; i <= 100; i++ )
-        sum += i;
-    printf("總和 = %d \n",sum);
+    for ( i = 1 ; i <= 9; i++ )
+    {
+        for( j = 1; j <= 9; j++ )
+        {
+            result = i * j;
+            printf("%d*%d=%-3d",i,j,result);
+        }
+            printf("\n");
+    }
 
     getchar();
     return 0;
