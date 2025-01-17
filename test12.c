@@ -1,16 +1,17 @@
 #include <stdio.h>
 int main()
 {
-    int i,j,result;
+    int i,j;
 
-    for ( i = 1 ; i <= 9; i++ )
+    printf(" \n"); /*最上留空白*/
+
+    for ( i = 1 ; i <= 10; i++ )
     {
-        for( j = 1; j <= 9; j++ )
-        {
-            result = i * j;
-            printf("%d*%d=%-3d",i,j,result);
-        }
-            printf("\n");
+        for( j = 1; j <= i; j++ )
+        
+            printf("%c%c",97,97);
+        printf("\n");
+            
     }
 
     getchar();
