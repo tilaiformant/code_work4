@@ -1,20 +1,21 @@
 #include <stdio.h>
 int main()
 {
-    int digit,num;
+    int i,j;
 
-    printf("請輸入任意整數 \n==> ");
-    scanf("%d",&num);
-    printf("整數的相反輸出 \n==> ");
-
-    while( num != 0 )
+    i = 5;
+    while ( i <= 9 )
     {
-        digit = num % 10;
-        num = num / 10;
-        printf("%d",digit);
-            
-    }
-    printf("\n");
+        j = 1;
+        while ( j++ <= ( 9 - i) )
+            printf(" ");
+        j = 9;
+        while ( ( j++ - i) < i)
+            printf("A");
+        i++;
+        printf("\n");
+        
+    }    
     getchar();
     return 0;
 }
